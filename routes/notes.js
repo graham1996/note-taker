@@ -11,12 +11,15 @@ noteRoute.get('/notes', (req, res) => {
   })
 });
 
+
 noteRoute.post('/notes', (req, res) => {
+  console.log(req)
   const {title, text} = req.body;
 
   if (!title || !text) {
     throw new Error("Note title and text must be filled in!");
   } 
+  
   const newNote = {title, text, id: uuidv4()};
 
   fs.readFile(db, 'utf8', (err, data) => {
