@@ -13,7 +13,7 @@ noteRoute.get('/notes', (req, res) => {
 
 
 noteRoute.post('/notes', (req, res) => {
-  console.log(req)
+  // console.log(req)
   const {title, text} = req.body;
 
   if (!title || !text) {

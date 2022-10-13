@@ -43,11 +43,9 @@ const saveNote = (note) => new Promise((resolve, reject) => {
     body: JSON.stringify(note),
   })
   .then(() => {
-    console.log("resolve")
     resolve()
   })
   .catch((err) => {
-    console.log(err)
     reject(err)
   })
 })
