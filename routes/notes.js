@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const db = './db/db.json';
+const db = require('../db/db.json');
 const { v4: uuidv4 } = require('uuid');
 const noteRoute = require('express').Router();
 

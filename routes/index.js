@@ -1,5 +1,5 @@
 // const express = require('express');
-const router = require('express').Router;
+const router = require('express').Router();
 const notesRoute = require('./notes');
 // const router = express();
 
