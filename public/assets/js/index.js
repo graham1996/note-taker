@@ -33,22 +33,15 @@ const getNotes = () =>
     },
   });
 
-const saveNote = (note) => new Promise((resolve, reject) => {
-  console.log({note})
+const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
-  })
-  .then(() => {
-    resolve()
-  })
-  .catch((err) => {
-    reject(err)
-  })
-})
+  });
+
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
