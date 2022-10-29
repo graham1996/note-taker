@@ -9,7 +9,7 @@ with the ability to add and delete notes.
 
 
 ## Deployment
-[Heroku](https://github.com/graham1996/note-taker)
+[Heroku](https://gj-notes.herokuapp.com/)
 
 ## Technologies
 * Express.js
