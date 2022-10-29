@@ -8,7 +8,8 @@ with the ability to add and delete notes.
 ![Screenshot (45)](https://user-images.githubusercontent.com/107967591/198854263-6840d7b8-191b-43a1-b579-31a85ca66d40.png)
 
 
-
+## Deployment
+[Heroku](https://github.com/graham1996/note-taker)
 
 ## Technologies
 * Express.js
